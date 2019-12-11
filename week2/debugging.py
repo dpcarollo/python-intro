@@ -19,3 +19,25 @@ print(table_length_inches)
 # Normally, repositories exist remotely (server side).
 # With a Clone you can work on a project outside the original location of the repository.
 # Any changes made will sync across the original and clones.
+
+price = {
+	20,
+	6,
+	9,
+	14,
+	5
+}
+
+hst = 0.13
+
+def get_total(price, tax_percent):
+	total = price * (tax_percent + 1)
+	total_rounded = round(total, 2)
+	return total_rounded
+
+first_total = get_total(price[0], hst)
+second_total = get_total(price[1], hst)
+
+print("The first two totals are $ + first_total + and $ + second_total + respectively.")
+
+# The first two totals are $22.6 and $6.78 respectively.
