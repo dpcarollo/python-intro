@@ -20,13 +20,7 @@ print(table_length_inches)
 # With a Clone you can work on a project outside the original location of the repository.
 # Any changes made will sync across the original and clones.
 
-price = {
-	20,
-	6,
-	9,
-	14,
-	5
-}
+price = (20, 6, 9, 14, 5)
 
 hst = 0.13
 
@@ -38,6 +32,8 @@ def get_total(price, tax_percent):
 first_total = get_total(price[0], hst)
 second_total = get_total(price[1], hst)
 
-print("The first two totals are $ + first_total + and $ + second_total + respectively.")
+
+print("The first two totals are $" + str(first_total) + " and $" + str(second_total) + " respectively.")
 
 # The first two totals are $22.6 and $6.78 respectively.
+
